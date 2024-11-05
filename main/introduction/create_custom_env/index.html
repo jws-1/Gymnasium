@@ -11,7 +11,7 @@
 <link rel="index" title="Index" href="../../genindex/" /><link rel="search" title="Search" href="../../search/" /><link rel="next" title="Recording Agents" href="../record_agent/" /><link rel="prev" title="Training an Agent" href="../train_agent/" />
         <link rel="canonical" href="https://gymnasium.farama.org/introduction/create_custom_env.html" />
 
-    <link rel="shortcut icon" href="../../_static/favicon.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.08.19.dev1 -->
+    <link rel="shortcut icon" href="../../_static/favicon.png"/><!-- Generated with Sphinx 7.4.7 and Furo 2023.08.19.dev1 -->
         <title>Create a Custom Environment - Gymnasium Documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=3e7f4c72" />
@@ -232,7 +232,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/spaces/fundamental/">Fundamental Spaces</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/spaces/composite/">Composite Spaces</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/spaces/utils/">Spaces Utils</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../api/vector/utils/">Utility functions</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../api/wrappers/">Wrappers</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Wrappers</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -290,136 +289,31 @@
 <li class="toctree-l2"><a class="reference internal" href="../../environments/mujoco/walker2d/">Walker2D</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../environments/atari/">Atari</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Atari</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/adventure/">Adventure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/air_raid/">AirRaid</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/alien/">Alien</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/amidar/">Amidar</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/assault/">Assault</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/asterix/">Asterix</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/asteroids/">Asteroids</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/atlantis/">Atlantis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/atlantis2/">Atlantis2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/backgammon/">Backgammon</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/bank_heist/">BankHeist</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/basic_math/">BasicMath</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/battle_zone/">BattleZone</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/beam_rider/">BeamRider</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/berzerk/">Berzerk</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/blackjack/">Blackjack</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/bowling/">Bowling</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/boxing/">Boxing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/breakout/">Breakout</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/carnival/">Carnival</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/casino/">Casino</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/centipede/">Centipede</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/chopper_command/">ChopperCommand</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/crazy_climber/">CrazyClimber</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/crossbow/">Crossbow</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/darkchambers/">Darkchambers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/defender/">Defender</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/demon_attack/">DemonAttack</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/donkey_kong/">DonkeyKong</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/double_dunk/">DoubleDunk</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/earthworld/">Earthworld</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/elevator_action/">ElevatorAction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/enduro/">Enduro</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/entombed/">Entombed</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/et/">Et</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/fishing_derby/">FishingDerby</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/flag_capture/">FlagCapture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/freeway/">Freeway</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/frogger/">Frogger</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/frostbite/">Frostbite</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/galaxian/">Galaxian</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/gopher/">Gopher</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/gravitar/">Gravitar</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/hangman/">Hangman</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/haunted_house/">HauntedHouse</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/hero/">Hero</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/human_cannonball/">HumanCannonball</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/ice_hockey/">IceHockey</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/jamesbond/">Jamesbond</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/journey_escape/">JourneyEscape</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/kaboom/">Kaboom</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/kangaroo/">Kangaroo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/keystone_kapers/">KeystoneKapers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/king_kong/">KingKong</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/klax/">Klax</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/koolaid/">Koolaid</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/krull/">Krull</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/kung_fu_master/">KungFuMaster</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/laser_gates/">LaserGates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/lost_luggage/">LostLuggage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/mario_bros/">MarioBros</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/miniature_golf/">MiniatureGolf</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/montezuma_revenge/">MontezumaRevenge</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/mr_do/">MrDo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/ms_pacman/">MsPacman</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/name_this_game/">NameThisGame</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/othello/">Othello</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/pacman/">Pacman</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/phoenix/">Phoenix</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/pitfall/">Pitfall</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/pitfall2/">Pitfall2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/pong/">Pong</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/pooyan/">Pooyan</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/private_eye/">PrivateEye</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/qbert/">Qbert</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/riverraid/">Riverraid</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/road_runner/">RoadRunner</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/robotank/">Robotank</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/seaquest/">Seaquest</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/sir_lancelot/">SirLancelot</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/skiing/">Skiing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/solaris/">Solaris</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/space_invaders/">SpaceInvaders</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/space_war/">SpaceWar</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/star_gunner/">StarGunner</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/superman/">Superman</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/surround/">Surround</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/tennis/">Tennis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/tetris/">Tetris</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/tic_tac_toe_3d/">TicTacToe3D</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/time_pilot/">TimePilot</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/trondead/">Trondead</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/turmoil/">Turmoil</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/tutankham/">Tutankham</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/up_n_down/">UpNDown</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/venture/">Venture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/video_checkers/">VideoCheckers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/video_chess/">VideoChess</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/video_cube/">VideoCube</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/video_pinball/">VideoPinball</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/wizard_of_wor/">WizardOfWor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/word_zapper/">WordZapper</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/yars_revenge/">YarsRevenge</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/zaxxon/">Zaxxon</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../environments/third_party_environments/">Third-Party Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../environments/atari/">Atari</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../environments/third_party_environments/">External Environments</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
 <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../tutorials/gymnasium_basics/">Gymnasium Basics</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of Gymnasium Basics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../tutorials/gymnasium_basics/">Gymnasium Basics</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Gymnasium Basics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/gymnasium_basics/load_quadruped_model/">Load custom quadruped robot environments</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/gymnasium_basics/handling_time_limits/">Handling Time Limits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/gymnasium_basics/implementing_custom_wrappers/">Implementing Custom Wrappers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/gymnasium_basics/environment_creation/">Make your own custom environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/gymnasium_basics/vector_envs_tutorial/">Training A2C with Vector Envs and Domain Randomization</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../tutorials/training_agents/">Training Agents</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of Training Agents</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../tutorials/training_agents/">Training Agents</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of Training Agents</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/training_agents/reinforce_invpend_gym_v26/">Training using REINFORCE for Mujoco</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/training_agents/blackjack_tutorial/">Solving Blackjack with Q-Learning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/training_agents/FrozenLake_tuto/">Frozenlake benchmark</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/third-party-tutorials/">Third-Party Tutorials</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://www.comet.com/docs/v2/integrations/ml-frameworks/gymnasium/?utm_source=gymnasium&amp;utm_medium=partner&amp;utm_campaign=partner_gymnasium_2023&amp;utm_content=docs_gymnasium">Comet Tutorial</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Development</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://github.com/Farama-Foundation/Gymnasium">Github</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://arxiv.org/abs/2407.17032">Paper</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../gymnasium_release_notes/">Gymnasium Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../gym_release_notes/">Gym Release Notes</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://github.com/Farama-Foundation/Gymnasium/blob/main/docs/README.md">Contribute to the Docs</a></li>
@@ -480,7 +374,7 @@
           <article role="main">
             
             <section class="tex2jax_ignore mathjax_ignore" id="create-a-custom-environment">
-<h1>Create a Custom Environment<a class="headerlink" href="#create-a-custom-environment" title="Link to this heading">#</a></h1>
+<h1>Create a Custom Environment<a class="headerlink" href="#create-a-custom-environment" title="Link to this heading">¶</a></h1>
 <p>This page provides a short outline of how to create custom environments with Gymnasium, for a more <a class="reference internal" href="../../tutorials/gymnasium_basics/environment_creation/"><span class="doc std std-doc">complete tutorial</span></a> with rendering, please read <a class="reference internal" href="../basic_usage/"><span class="doc std std-doc">basic usage</span></a>  before reading this page.</p>
 <p>We will implement a very simplistic game, called <code class="docutils literal notranslate"><span class="pre">GridWorldEnv</span></code>, consisting of a 2-dimensional square grid of fixed size. The agent can move vertically or horizontally between grid cells in each timestep and the goal of the agent is to navigate to a target on the grid that has been placed randomly at the beginning of the episode.</p>
 <p>Basic information about the game</p>
@@ -491,7 +385,7 @@
 <li><p>The agent is only rewarded when it reaches the target, i.e., the reward is one when the agent reaches the target and zero otherwise.</p></li>
 </ul>
 <section id="environment-init">
-<h2>Environment <code class="docutils literal notranslate"><span class="pre">__init__</span></code><a class="headerlink" href="#environment-init" title="Link to this heading">#</a></h2>
+<h2>Environment <code class="docutils literal notranslate"><span class="pre">__init__</span></code><a class="headerlink" href="#environment-init" title="Link to this heading">¶</a></h2>
 <p>Like all environments, our custom environment will inherit from <a class="reference internal" href="../../api/env/#gymnasium.Env" title="gymnasium.Env"><code class="xref py py-class docutils literal notranslate"><span class="pre">gymnasium.Env</span></code></a> that defines the structure of environment. One of the requirements for an environment is defining the observation and action space, which declare the general set of possible inputs (actions) and outputs (observations) of the environment. As outlined in our basic information about the game, our agent has four discrete actions, therefore we will use the <code class="docutils literal notranslate"><span class="pre">Discrete(4)</span></code> space with four options.</p>
 <p>For our observation, there are a couple options, for this tutorial we will imagine our observation looks like <code class="docutils literal notranslate"><span class="pre">{&quot;agent&quot;:</span> <span class="pre">array([1,</span> <span class="pre">0]),</span> <span class="pre">&quot;target&quot;:</span> <span class="pre">array([0,</span> <span class="pre">3])}</span></code> where the array elements represent the x and y positions of the agent or target. Alternative options for representing the observation is as a 2d grid  with values representing the agent and target on the grid or a 3d grid with each “layer” containing only the agent or target information. Therefore, we will declare the observation space as <a class="reference internal" href="../../api/spaces/composite/#gymnasium.spaces.Dict" title="gymnasium.spaces.Dict"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></a> with the agent and target spaces being a <a class="reference internal" href="../../api/spaces/fundamental/#gymnasium.spaces.Box" title="gymnasium.spaces.Box"><code class="xref py py-class docutils literal notranslate"><span class="pre">Box</span></code></a> allowing an array output of an int type.</p>
 <p>For a full list of possible spaces to use with an environment, see <a class="reference internal" href="../../api/spaces/"><span class="doc std std-doc">spaces</span></a></p>
@@ -532,7 +426,7 @@
 </div>
 </section>
 <section id="constructing-observations">
-<h2>Constructing Observations<a class="headerlink" href="#constructing-observations" title="Link to this heading">#</a></h2>
+<h2>Constructing Observations<a class="headerlink" href="#constructing-observations" title="Link to this heading">¶</a></h2>
 <p>Since we will need to compute observations both in <a class="reference internal" href="../../api/env/#gymnasium.Env.reset" title="gymnasium.Env.reset"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Env.reset()</span></code></a> and <a class="reference internal" href="../../api/env/#gymnasium.Env.step" title="gymnasium.Env.step"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Env.step()</span></code></a>, it is often convenient to have a method <code class="docutils literal notranslate"><span class="pre">_get_obs</span></code> that translates the environment’s state into an observation. However, this is not mandatory and you can compute the observations in <a class="reference internal" href="../../api/env/#gymnasium.Env.reset" title="gymnasium.Env.reset"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Env.reset()</span></code></a> and <a class="reference internal" href="../../api/env/#gymnasium.Env.step" title="gymnasium.Env.step"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Env.step()</span></code></a> separately.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">_get_obs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;agent&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_agent_location</span><span class="p">,</span> <span class="s2">&quot;target&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_target_location</span><span class="p">}</span>
@@ -550,7 +444,7 @@
 <p>Oftentimes, info will also contain some data that is only available inside the <a class="reference internal" href="../../api/env/#gymnasium.Env.step" title="gymnasium.Env.step"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Env.step()</span></code></a> method (e.g., individual reward terms). In that case, we would have to update the dictionary that is returned by <code class="docutils literal notranslate"><span class="pre">_get_info</span></code> in <a class="reference internal" href="../../api/env/#gymnasium.Env.step" title="gymnasium.Env.step"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Env.step()</span></code></a>.</p>
 </section>
 <section id="reset-function">
-<h2>Reset function<a class="headerlink" href="#reset-function" title="Link to this heading">#</a></h2>
+<h2>Reset function<a class="headerlink" href="#reset-function" title="Link to this heading">¶</a></h2>
 <p>As the purpose of <a class="reference internal" href="../../api/env/#gymnasium.Env.reset" title="gymnasium.Env.reset"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reset()</span></code></a> is to initiate a new episode for an environment and has two parameters: <code class="docutils literal notranslate"><span class="pre">seed</span></code> and <code class="docutils literal notranslate"><span class="pre">options</span></code>. The seed can be used to initialize the random number generator to a deterministic state and options can be used to specify values used within reset. On the first line of the reset, you need to call <code class="docutils literal notranslate"><span class="pre">super().reset(seed=seed)</span></code> which will initialize the random number generate (<a class="reference internal" href="../../api/env/#gymnasium.Env.np_random" title="gymnasium.Env.np_random"><code class="xref py py-attr docutils literal notranslate"><span class="pre">np_random</span></code></a>) to use through the rest of the <a class="reference internal" href="../../api/env/#gymnasium.Env.reset" title="gymnasium.Env.reset"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reset()</span></code></a>.</p>
 <p>Within our custom environment, the <a class="reference internal" href="../../api/env/#gymnasium.Env.reset" title="gymnasium.Env.reset"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reset()</span></code></a> needs to randomly choose the agent and target’s positions (we repeat this if they have the same position). The return type of <a class="reference internal" href="../../api/env/#gymnasium.Env.reset" title="gymnasium.Env.reset"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reset()</span></code></a> is a tuple of the initial observation and any auxiliary information. Therefore, we can use the methods <code class="docutils literal notranslate"><span class="pre">_get_obs</span></code> and <code class="docutils literal notranslate"><span class="pre">_get_info</span></code> that we implemented earlier for that:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="k">def</span> <span class="nf">reset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seed</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">options</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
@@ -575,12 +469,12 @@
 </div>
 </section>
 <section id="step-function">
-<h2>Step function<a class="headerlink" href="#step-function" title="Link to this heading">#</a></h2>
+<h2>Step function<a class="headerlink" href="#step-function" title="Link to this heading">¶</a></h2>
 <p>The <a class="reference internal" href="../../api/env/#gymnasium.Env.step" title="gymnasium.Env.step"><code class="xref py py-meth docutils literal notranslate"><span class="pre">step()</span></code></a> method usually contains most of the logic for your environment, it accepts an <code class="docutils literal notranslate"><span class="pre">action</span></code> and computes the state of the environment after the applying the action, returning a tuple of the next observation, the resulting reward, if the environment has terminated, if the environment has truncated and auxiliary information.</p>
 <p>For our environment, several things need to happen during the step function:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>We use the self._action_to_direction to convert the discrete action (e.g., 2) to a grid direction with our agent location. To prevent the agent from going out of bounds of the grd, we clip the agen’t location to stay within bounds.</p></li>
+<li><p>We use the self._action_to_direction to convert the discrete action (e.g., 2) to a grid direction with our agent location. To prevent the agent from going out of bounds of the grid, we clip the agent’s location to stay within bounds.</p></li>
 <li><p>We compute the agent’s reward by checking if the agent’s current position is equal to the target’s location.</p></li>
 <li><p>Since the environment doesn’t truncate internally (we can apply a time limit wrapper to the environment during :meth:make), we permanently set truncated to False.</p></li>
 <li><p>We once again use _get_obs and _get_info to obtain the agent’s observation and auxiliary information.</p></li>
@@ -606,7 +500,7 @@
 </div>
 </section>
 <section id="registering-and-making-the-environment">
-<h2>Registering and making the environment<a class="headerlink" href="#registering-and-making-the-environment" title="Link to this heading">#</a></h2>
+<h2>Registering and making the environment<a class="headerlink" href="#registering-and-making-the-environment" title="Link to this heading">¶</a></h2>
 <p>While it is possible to use your new custom environment now immediately, it is more common for environments to be initialized using <a class="reference internal" href="../../api/registry/#gymnasium.make" title="gymnasium.make"><code class="xref py py-meth docutils literal notranslate"><span class="pre">gymnasium.make()</span></code></a>. In this section, we explain how to register a custom environment then initialize it.</p>
 <p>The environment ID consists of three components, two of which are  optional: an optional namespace (here: <code class="docutils literal notranslate"><span class="pre">gymnasium_env</span></code>), a mandatory  name (here: <code class="docutils literal notranslate"><span class="pre">GridWorld</span></code>) and an optional but recommended version (here: v0). It may have also be registered as <code class="docutils literal notranslate"><span class="pre">GridWorld-v0</span></code> (the  recommended approach), <code class="docutils literal notranslate"><span class="pre">GridWorld</span></code> or <code class="docutils literal notranslate"><span class="pre">gymnasium_env/GridWorld</span></code>, and  the appropriate ID should then be used during environment creation.</p>
 <p>The entry point can be a string or function, as this tutorial isn’t part of a python project, we cannot use a string but for most environments, this is the normal way of specifying the entry point.</p>
@@ -633,7 +527,7 @@
 </div>
 </section>
 <section id="using-wrappers">
-<h2>Using Wrappers<a class="headerlink" href="#using-wrappers" title="Link to this heading">#</a></h2>
+<h2>Using Wrappers<a class="headerlink" href="#using-wrappers" title="Link to this heading">¶</a></h2>
 <p>Oftentimes, we want to use different variants of a custom environment, or we want to modify the behavior of an environment that is provided by Gymnasium or some other party. Wrappers allow us to do this without changing the environment implementation or adding any boilerplate code. Check out the <a class="reference internal" href="../../api/wrappers/"><span class="doc std std-doc">wrapper documentation</span></a> for details on how to use wrappers and instructions for implementing your own. In our example, observations cannot be used directly in learning code because they are dictionaries. However, we don’t actually need to touch our environment implementation to fix this! We can simply add a wrapper on top of environment instances to flatten observations into a single array:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">gymnasium.wrappers</span> <span class="kn">import</span> <span class="n">FlattenObservation</span>
 
@@ -685,7 +579,7 @@
           <div class="bottom-of-page">
             <div class="left-details">
               <div class="copyright">
-                Copyright &#169; 2023 Farama Foundation
+                Copyright &#169; 2024 Farama Foundation
               </div>
               <!--
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
@@ -814,8 +708,8 @@
         })()
       </script>
 
-    <script src="../../_static/documentation_options.js?v=ed34540e"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/documentation_options.js?v=3596a5a1"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=7660844c"></script>
     

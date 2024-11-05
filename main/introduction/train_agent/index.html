@@ -11,7 +11,7 @@
 <link rel="index" title="Index" href="../../genindex/" /><link rel="search" title="Search" href="../../search/" /><link rel="next" title="Create a Custom Environment" href="../create_custom_env/" /><link rel="prev" title="Basic Usage" href="../basic_usage/" />
         <link rel="canonical" href="https://gymnasium.farama.org/introduction/train_agent.html" />
 
-    <link rel="shortcut icon" href="../../_static/favicon.png"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.08.19.dev1 -->
+    <link rel="shortcut icon" href="../../_static/favicon.png"/><!-- Generated with Sphinx 7.4.7 and Furo 2023.08.19.dev1 -->
         <title>Training an Agent - Gymnasium Documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=3e7f4c72" />
@@ -232,7 +232,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/spaces/fundamental/">Fundamental Spaces</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/spaces/composite/">Composite Spaces</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/spaces/utils/">Spaces Utils</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../api/vector/utils/">Utility functions</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../api/wrappers/">Wrappers</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Wrappers</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
@@ -290,136 +289,31 @@
 <li class="toctree-l2"><a class="reference internal" href="../../environments/mujoco/walker2d/">Walker2D</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../environments/atari/">Atari</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Atari</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/adventure/">Adventure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/air_raid/">AirRaid</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/alien/">Alien</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/amidar/">Amidar</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/assault/">Assault</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/asterix/">Asterix</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/asteroids/">Asteroids</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/atlantis/">Atlantis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/atlantis2/">Atlantis2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/backgammon/">Backgammon</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/bank_heist/">BankHeist</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/basic_math/">BasicMath</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/battle_zone/">BattleZone</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/beam_rider/">BeamRider</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/berzerk/">Berzerk</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/blackjack/">Blackjack</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/bowling/">Bowling</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/boxing/">Boxing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/breakout/">Breakout</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/carnival/">Carnival</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/casino/">Casino</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/centipede/">Centipede</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/chopper_command/">ChopperCommand</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/crazy_climber/">CrazyClimber</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/crossbow/">Crossbow</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/darkchambers/">Darkchambers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/defender/">Defender</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/demon_attack/">DemonAttack</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/donkey_kong/">DonkeyKong</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/double_dunk/">DoubleDunk</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/earthworld/">Earthworld</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/elevator_action/">ElevatorAction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/enduro/">Enduro</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/entombed/">Entombed</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/et/">Et</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/fishing_derby/">FishingDerby</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/flag_capture/">FlagCapture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/freeway/">Freeway</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/frogger/">Frogger</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/frostbite/">Frostbite</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/galaxian/">Galaxian</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/gopher/">Gopher</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/gravitar/">Gravitar</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/hangman/">Hangman</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/haunted_house/">HauntedHouse</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/hero/">Hero</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/human_cannonball/">HumanCannonball</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/ice_hockey/">IceHockey</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/jamesbond/">Jamesbond</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/journey_escape/">JourneyEscape</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/kaboom/">Kaboom</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/kangaroo/">Kangaroo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/keystone_kapers/">KeystoneKapers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/king_kong/">KingKong</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/klax/">Klax</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/koolaid/">Koolaid</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/krull/">Krull</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/kung_fu_master/">KungFuMaster</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/laser_gates/">LaserGates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/lost_luggage/">LostLuggage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/mario_bros/">MarioBros</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/miniature_golf/">MiniatureGolf</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/montezuma_revenge/">MontezumaRevenge</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/mr_do/">MrDo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/ms_pacman/">MsPacman</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/name_this_game/">NameThisGame</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/othello/">Othello</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/pacman/">Pacman</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/phoenix/">Phoenix</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/pitfall/">Pitfall</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/pitfall2/">Pitfall2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/pong/">Pong</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/pooyan/">Pooyan</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/private_eye/">PrivateEye</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/qbert/">Qbert</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/riverraid/">Riverraid</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/road_runner/">RoadRunner</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/robotank/">Robotank</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/seaquest/">Seaquest</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/sir_lancelot/">SirLancelot</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/skiing/">Skiing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/solaris/">Solaris</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/space_invaders/">SpaceInvaders</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/space_war/">SpaceWar</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/star_gunner/">StarGunner</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/superman/">Superman</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/surround/">Surround</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/tennis/">Tennis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/tetris/">Tetris</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/tic_tac_toe_3d/">TicTacToe3D</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/time_pilot/">TimePilot</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/trondead/">Trondead</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/turmoil/">Turmoil</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/tutankham/">Tutankham</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/up_n_down/">UpNDown</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/venture/">Venture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/video_checkers/">VideoCheckers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/video_chess/">VideoChess</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/video_cube/">VideoCube</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/video_pinball/">VideoPinball</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/wizard_of_wor/">WizardOfWor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/word_zapper/">WordZapper</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/yars_revenge/">YarsRevenge</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../environments/atari/zaxxon/">Zaxxon</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../environments/third_party_environments/">Third-Party Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../environments/atari/">Atari</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../environments/third_party_environments/">External Environments</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
 <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../tutorials/gymnasium_basics/">Gymnasium Basics</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of Gymnasium Basics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../tutorials/gymnasium_basics/">Gymnasium Basics</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" role="switch" type="checkbox"/><label for="toctree-checkbox-8"><div class="visually-hidden">Toggle navigation of Gymnasium Basics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/gymnasium_basics/load_quadruped_model/">Load custom quadruped robot environments</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/gymnasium_basics/handling_time_limits/">Handling Time Limits</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/gymnasium_basics/implementing_custom_wrappers/">Implementing Custom Wrappers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/gymnasium_basics/environment_creation/">Make your own custom environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/gymnasium_basics/vector_envs_tutorial/">Training A2C with Vector Envs and Domain Randomization</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../tutorials/training_agents/">Training Agents</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" role="switch" type="checkbox"/><label for="toctree-checkbox-10"><div class="visually-hidden">Toggle navigation of Training Agents</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../tutorials/training_agents/">Training Agents</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" role="switch" type="checkbox"/><label for="toctree-checkbox-9"><div class="visually-hidden">Toggle navigation of Training Agents</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/training_agents/reinforce_invpend_gym_v26/">Training using REINFORCE for Mujoco</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/training_agents/blackjack_tutorial/">Solving Blackjack with Q-Learning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorials/training_agents/FrozenLake_tuto/">Frozenlake benchmark</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutorials/third-party-tutorials/">Third-Party Tutorials</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://www.comet.com/docs/v2/integrations/ml-frameworks/gymnasium/?utm_source=gymnasium&amp;utm_medium=partner&amp;utm_campaign=partner_gymnasium_2023&amp;utm_content=docs_gymnasium">Comet Tutorial</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Development</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://github.com/Farama-Foundation/Gymnasium">Github</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://arxiv.org/abs/2407.17032">Paper</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../gymnasium_release_notes/">Gymnasium Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../gym_release_notes/">Gym Release Notes</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://github.com/Farama-Foundation/Gymnasium/blob/main/docs/README.md">Contribute to the Docs</a></li>
@@ -480,12 +374,12 @@
           <article role="main">
             
             <section class="tex2jax_ignore mathjax_ignore" id="training-an-agent">
-<h1>Training an Agent<a class="headerlink" href="#training-an-agent" title="Link to this heading">#</a></h1>
+<h1>Training an Agent<a class="headerlink" href="#training-an-agent" title="Link to this heading">¶</a></h1>
 <p>This page provides a short outline of how to train an agent for a Gymnasium environment, in particular, we will use a tabular based Q-learning to solve the Blackjack v1 environment. For a full complete version of this tutorial and more training tutorials for other environments and algorithm, see <a class="reference internal" href="#../tutorials/training_agents"><span class="xref myst">this</span></a>. Please read <a class="reference internal" href="../basic_usage/"><span class="doc std std-doc">basic usage</span></a> before reading this page. Before we implement any code, here is an overview of Blackjack and Q-learning.</p>
 <p>Blackjack is one of the most popular casino card games that is also infamous for being beatable under certain conditions. This version of the game uses an infinite deck (we draw the cards with replacement), so counting cards won’t be a viable strategy in our simulated game. The observation is a tuple of the player’s current sum, the value of the dealers face-up card and a boolean value on whether the player holds a usable case. The agent can pick between two actions: stand (0) such that the player takes no more cards and hit (1) such that the player will take another player. To win, your card sum should be greater than the dealers without exceeding 21. The game ends if the player selects stand or if the card sum is greater than 21. Full documentation can be found at <a class="reference external" href="https://gymnasium.farama.org/environments/toy_text/blackjack">https://gymnasium.farama.org/environments/toy_text/blackjack</a>.</p>
 <p>Q-learning is a model-free off-policy learning algorithm by Watkins, 1989 for environments with discrete action spaces and was famous for being the first reinforcement learning algorithm to prove convergence to an optimal policy under certain conditions.</p>
 <section id="executing-an-action">
-<h2>Executing an action<a class="headerlink" href="#executing-an-action" title="Link to this heading">#</a></h2>
+<h2>Executing an action<a class="headerlink" href="#executing-an-action" title="Link to this heading">¶</a></h2>
 <p>After receiving our first observation, we are only going to use the<code class="docutils literal notranslate"><span class="pre">env.step(action)</span></code> function to interact with the environment. This function takes an action as input and executes it in the environment. Because that action changes the state of the environment, it returns four useful variables to us. These are:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">next</span> <span class="pre">observation</span></code>: This is the observation that the agent will receive after taking the action.</p></li>
@@ -498,7 +392,7 @@
 <p>Note that it is not a good idea to call <code class="docutils literal notranslate"><span class="pre">env.render()</span></code> in your training loop because rendering slows down training by a lot. Rather try to build an extra loop to evaluate and showcase the agent after training.</p>
 </section>
 <section id="building-an-agent">
-<h2>Building an agent<a class="headerlink" href="#building-an-agent" title="Link to this heading">#</a></h2>
+<h2>Building an agent<a class="headerlink" href="#building-an-agent" title="Link to this heading">¶</a></h2>
 <p>Let’s build a Q-learning agent to solve Blackjack! We’ll need some functions for picking an action and updating the agents action values. To ensure that the agents explores the environment, one possible solution is the epsilon-greedy strategy, where we pick a random action with the percentage <code class="docutils literal notranslate"><span class="pre">epsilon</span></code> and the greedy action (currently valued as the best) <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">-</span> <span class="pre">epsilon</span></code>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
 <span class="kn">import</span> <span class="nn">gymnasium</span> <span class="k">as</span> <span class="nn">gym</span>
@@ -575,7 +469,7 @@
 </div>
 </section>
 <section id="training-the-agent">
-<h2>Training the agent<a class="headerlink" href="#training-the-agent" title="Link to this heading">#</a></h2>
+<h2>Training the agent<a class="headerlink" href="#training-the-agent" title="Link to this heading">¶</a></h2>
 <p>To train the agent, we will let the agent play one episode (one complete game is called an episode) at a time and then update it’s Q-values after each episode. The agent will have to experience a lot of episodes to explore the environment sufficiently.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># hyperparameters</span>
 <span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.01</span>
@@ -585,6 +479,7 @@
 <span class="n">final_epsilon</span> <span class="o">=</span> <span class="mf">0.1</span>
 
 <span class="n">agent</span> <span class="o">=</span> <span class="n">BlackjackAgent</span><span class="p">(</span>
+    <span class="n">env</span><span class="p">,</span>
     <span class="n">learning_rate</span><span class="o">=</span><span class="n">learning_rate</span><span class="p">,</span>
     <span class="n">initial_epsilon</span><span class="o">=</span><span class="n">start_epsilon</span><span class="p">,</span>
     <span class="n">epsilon_decay</span><span class="o">=</span><span class="n">epsilon_decay</span><span class="p">,</span>
@@ -620,7 +515,7 @@
 <p><img alt="" src="../../_images/blackjack_training_plots.png" /></p>
 </section>
 <section id="visualising-the-policy">
-<h2>Visualising the policy<a class="headerlink" href="#visualising-the-policy" title="Link to this heading">#</a></h2>
+<h2>Visualising the policy<a class="headerlink" href="#visualising-the-policy" title="Link to this heading">¶</a></h2>
 <p><img alt="" src="../../_images/blackjack_with_usable_ace.png" /></p>
 <p><img alt="" src="../../_images/blackjack_without_usable_ace.png" /></p>
 <p>Hopefully this tutorial helped you get a grip of how to interact with Gymnasium environments and sets you on a journey to solve many more RL challenges.</p>
@@ -662,7 +557,7 @@
           <div class="bottom-of-page">
             <div class="left-details">
               <div class="copyright">
-                Copyright &#169; 2023 Farama Foundation
+                Copyright &#169; 2024 Farama Foundation
               </div>
               <!--
             Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
@@ -789,8 +684,8 @@
         })()
       </script>
 
-    <script src="../../_static/documentation_options.js?v=ed34540e"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/documentation_options.js?v=3596a5a1"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/furo.js?v=7660844c"></script>
     
